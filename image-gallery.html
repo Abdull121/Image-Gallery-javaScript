@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        * {
+            box-sizing: border-box;
+            padding: 0px;
+            margin: 0px;
+        }
+        body{
+            background-image: url('bg.jpg');
+           background-repeat: no-repeat;
+           background-size: cover;
+
+        }
+
+        img {
+            width: 100%;
+            cursor: pointer;
+            border: 2px solid #d40707;
+            height: auto;
+            transition: transform 0.2s linear;
+            border-radius: 5px;
+         
+
+        }
+
+        .main-img:hover {
+            transform: scale(1.05);
+
+        }
+
+        #modal {
+            background-color: rgb(106, 106, 106);
+            width: 100vw;
+            height: 100vh;
+            border: 5px solid;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            justify-content: center;
+            align-items: center;
+            display: none;
+
+        }
+
+        #crossBtn {
+
+            cursor: pointer;
+            width: 30px;
+            height: 30px;
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+
+        #modal-img {
+            border: 1px solid;
+
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 40%;
+            height: 70vh;
+
+            margin-top: 100px;
+            width: 60%;
+            border-radius: 3px;
+            
+
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            border: 5px solid #505050ae;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 50px;
+            width: 400px;
+            height: 678px;
+            border-radius: 8px;
+
+        }
+    </style>
+    <div class="container">
+        <img class="main-img" src="images/ai.png" alt="img">
+        <img class="main-img" src="images/black.jpg" alt="img">
+        <img class="main-img" src="images/12319.jpg" alt="img">
+
+    </div>
+
+
+    <div id="modal">
+        <img src="" alt="img" id="modal-img">
+        <button id="crossBtn">X</button>
+    </div>
+    <script src="image-gallery.js"></script>
+</body>
+
+</html>
